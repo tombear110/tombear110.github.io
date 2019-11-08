@@ -7,7 +7,7 @@
 <title>
     Hello Gridea | Gridea
 </title>
-<link rel="shortcut icon" href="https://github.com/tombear110/favicon.ico?v=1573196093253">
+<link rel="shortcut icon" href="https://github.com/tombear110/favicon.ico?v=1573196149144">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -20,6 +20,13 @@
 
 
         
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                
+
+                    
+                            
 </head>
 
 <body>
@@ -28,7 +35,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://github.com/tombear110">
-                <img class="avatar" src="https://github.com/tombear110/images/avatar.png?v=1573196093253" alt="">
+                <img class="avatar" src="https://github.com/tombear110/images/avatar.png?v=1573196149144" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -105,7 +112,7 @@
                             <time class="post-time">2018-12-12</time>
                             
                                 <a href="https://github.com/tombear110/tag/Vd6vHnQux" class="post-tag i-tag
-                            i-tag-other_2">
+                            i-tag-primary">
                             #Gridea
                         </a>
                                 
@@ -215,6 +222,26 @@
         });
     </script>
     
+        
+            <script>
+    window.onload = function() {
+        var gitalk = new Gitalk({
+            clientID: 'b7bb908ff42d1c92a33c',
+            clientSecret: '891bf17bc0437629967e5ed2f93ad2701e82ee1e',
+            repo: 'tombear110.github.io',
+            owner: 'tombear110',
+            admin: ['tombear110'],
+            id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+            distractionFreeMode: false // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    }
+</script>
+                
+
+                    
+                                
 </body>
 
 </html>
